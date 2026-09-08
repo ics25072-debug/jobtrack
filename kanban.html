@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board - JobTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>JobTrack</h2>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="applications.html">Applications</a>
+            <a href="kanban.html" class="active">Kanban</a>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Kanban Board</h1>
+        <p>Drag and drop applications to update their status.</p>
+
+        <div class="kanban-board">
+
+            <div class="kanban-column" data-status="Applied">
+                <h3>Applied</h3>
+                <div class="kanban-cards" id="applied-cards" data-status="Applied"></div>
+            </div>
+
+            <div class="kanban-column" data-status="Interview">
+                <h3>Interview</h3>
+                <div class="kanban-cards" id="interview-cards" data-status="Interview"></div>
+            </div>
+
+            <div class="kanban-column" data-status="Offer">
+                <h3>Offer</h3>
+                <div class="kanban-cards" id="offer-cards" data-status="Offer"></div>
+            </div>
+
+            <div class="kanban-column" data-status="Rejected">
+                <h3>Rejected</h3>
+                <div class="kanban-cards" id="rejected-cards" data-status="Rejected"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="kanban.js"></script>
+</body>
+</html>

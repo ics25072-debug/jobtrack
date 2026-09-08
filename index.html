@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<aside class="sidebar">
+    <h2>JobTrack</h2>
+
+    <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="applications.html">Applications</a>
+        <a href="kanban.html">Kanban</a>
+    </nav>
+</aside>
+
+<main>
+    <h1>Dashboard</h1>
+    <p>Track your job applications in one place.</p>
+<div class="stats">
+  <div class="stat-card">
+    <h3>Total Applications</h3>
+    <p id="total-count">12</p>
+  </div>
+  <div class="stat-card">
+    <h3>Interviews</h3>
+    <p id="interview-count">3</p>
+  </div>
+  <div class="stat-card">
+    <h3>Offers</h3>
+    <p id="offer-count">1</p>
+  </div>
+  <div class="stat-card">
+    <h3>Rejected</h3>
+    <p id="rejected-count">8</p>
+  </div>
+</div>
+
+<div class="applications">
+  <h2>Recent Applications</h2>
+  <button id="add-btn">+ Add Application</button>
+  <div id="application-form" class="modal">
+    <div class="modal-content">
+    <h3>Add New Application</h3>
+    <form id="job-form">
+      <label for="company">Company Name</label>
+      <input type="text" id="company" name="company" required>
+      <label for="position">Position</label>
+      <input type="text" id="position" name="position" required>
+      <label for="status">Status</label>
+      <select id="status" name="status">
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Offer">Offer</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+      <button type="submit">Save Application</button>
+    </form>
+    </div>
+  </div>
+  <table id="applications-table">
+    <tr>
+        <th>Company</th>
+        <th>Position</th>
+        <th>Status</th>
+        <th>Date</th>
+        <th>Action</th>
+    </tr>
+    <tbody id="applications-body"></tbody>
+  </table>
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications - JobTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<aside class="sidebar">
+    <h2>JobTrack</h2>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="applications.html" class="active">Applications</a>
+        <a href="kanban.html">Kanban</a>
+    </nav>
+</aside>
+
+<main>
+    <h1>Applications</h1>
+    <p>Manage all your job applications.</p>
+
+    <div class="applications">
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search by company or position..."
+        >
+
+        <select id="status-filter">
+            <option value="All">All Statuses</option>
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Offer">Offer</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+
+            <tbody id="applications-body"></tbody>
+        </table>
+    </div>
+</main>
+
+<script src="applications.js"></script>
+
+</body>
+</html>
