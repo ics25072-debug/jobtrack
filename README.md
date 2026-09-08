@@ -1,6 +1,11 @@
 # JobTrack
 
 A full-stack web application for organizing and tracking job applications, built with PHP, MySQL, and vanilla JavaScript.
+## Live Demo
+
+[Try JobTrack Live](https://jobtrack-konstantina.infinityfreeapp.com/welcome.html)
+
+Explore the application without creating an account. Each browser receives an isolated demo session, so your applications remain separate from other visitors.
 
 ## Features
 
@@ -38,7 +43,7 @@ The local configuration file is excluded from version control.
 
 ## Project Status
 
-This project was developed as a personal portfolio application to practice full-stack web development, database integration, and interactive user interfaces. It is intended for local demonstration and is not currently hosted as a public live service.
+JobTrack is a personal portfolio project developed to practice full-stack web development, database integration, and interactive user interfaces. The application is publicly hosted with isolated demo sessions, allowing visitors to explore its features without creating an account.
 
 ## Future Improvements
 
